@@ -1,0 +1,17 @@
+1) Typically Binary Search is used on arrays. BS works by using random access to find the middle 
+and then cut the search space in half after each iteration. However if we try to implement BS in a linked list
+the algorithm will lose it's ability to effectivly manipulate random access effectively. Since we will have to traverse from the head to be able to reach 
+the "middle", secondly every iteration will require us to traverse the linked list to be able to reach the middle.
+ad of the algoriThis traversal will add time complexity and instethm being  O(Log n) it will now be
+O(n Log n). An algorithm that we can present that will work better is Linear search,
+this is because linear search works more straight forward than binary search, LS will 
+sequentially traverse the list by comparing each node's value with the target value, until the target is found.
+
+2) Two of the key factors when designing an algorithm are time and space complexity.
+Time complexity is measuring the execution time of an algorithm as it's input size grows.
+While space complexity measures the amount of memory an algorithm requires relative to it's input size
+The trade-offs are important things to consider, for example if we have a very large grapgh and we want to be able to traverse it and 
+search quickly we need to optimize for time, so we might use dijkatra's algorithm, which uses priority queues
+optimizing time at the cost of O(V + E) space.
+But if we we're to have a smaller graph, perhaps it isn't worth optimizing for time and we can manage with 
+DFS, where we use O(V) space for the stack. But it will take longer to do DFS on the bigger graph. 

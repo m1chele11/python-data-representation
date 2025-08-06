@@ -1,0 +1,14 @@
+
+
+
+3) 
+Key takeaways when comparing 1 & 3
+
+- Embeddings excel at capturing semantic meaning, 
+making them superior for tasks requiring understanding of paraphrases or synonyms.
+
+- One-Hot Encoding is faster but limited to surface-level word overlap.
+
+- Trade-offs: 
+    - Choose embeddings for accuracy in semantic tasks.
+    - Use one-hot for simple, fast lexical analysis.
