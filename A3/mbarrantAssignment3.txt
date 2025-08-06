@@ -1,0 +1,58 @@
+
+
+Question 3:
+
+A) Unsigned Binary Representation:
+
+In an unsigned binary number, all bits represent the magnitude of the value, 
+meaning there is no sign bit. The value is determined by 
+treating the entire binary sequence as a standard base-2 number.
+
+So, To convert this binary number to decimal, we expand 
+it using positional notation:
+
+(0 x 2^31) + (0 x 2^30)..... (1 x 2^24)... all the way to the end. 
+
+B) Twos Complement representation:
+
+in twos complement the left most bit is reffered to as the most significant bit, or sign bit.
+
+Where:
+
+0 -> indicates positive number
+1 -> negative number, and we subtract 2^n where n is the num of bits to get 
+the correct decimal value.
+
+
+C) BCD:
+
+we start by converting each 4 bit chicl tp decimal then put it all together.
+
+0101 = 5
+1001 = 9
+0110 = 6
+0101 = 5
+0111 = 7
+0010 = 2
+0001 = 1
+
+read them top down and get: 5965721
+
+D) Biased-231 Representation
+
+adding the bias number 2^31 = 2147483648 
+
+we do actual decimal value - binary value - Biased
+
+so,
+    1498377761−2147483648=−649105887
+
+
+E) will do in python
+
+
+
+
+
+
+
